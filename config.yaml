@@ -1,0 +1,17 @@
+data_dir: ./data
+output_file: ./results.csv
+
+checks:
+  daily:
+    enabled: true
+    default_threshold: 0.01
+  weekly:
+    enabled: true
+    default_threshold: 0.05
+
+overrides:
+  SP500:
+    daily_threshold: 0.015
+  DJUA:
+    daily_enabled: false
+    weekly_enabled: false
